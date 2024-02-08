@@ -3,39 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Invoice_System.MainPage">
 
-    <ScrollView>
+    <ScrollView BackgroundColor="#074998">
+
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
+            BackgroundColor="#0f2ece"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+                <Editor
+                    x:Name="Input"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="75"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"/>
+                
+                <Editor
+                    x:Name="Output"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    IsReadOnly="True"
+                    TextColor="#121212"
+                    HeightRequest="75"
+                    BackgroundColor="#7b7b7b"/>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+                </StackLayout>
+                <Button
+                WidthRequest="150"
+                HeightRequest="75"
+                x:Name="BTN"
+                Text="Uložit"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="#fffdf9"
+                Clicked="BTN_Clicked"
+                BackgroundColor="#ff8800"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
 
         </VerticalStackLayout>
+
     </ScrollView>
 
 </ContentPage>

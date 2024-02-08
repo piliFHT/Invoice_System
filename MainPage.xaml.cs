@@ -2,23 +2,17 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    public MainPage()
+    {
+        InitializeComponent();
+    }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    private void BTN_Clicked(object sender, EventArgs e)
+    {
+        Output.Text += Input.Text + "\n"; //Text co je v Input bude i v Output
+        Input.Text = string.Empty; //Text z Input to smaže -> efekt "přesunu"
+    }
 }
 
