@@ -49,6 +49,10 @@ public partial class MainPage : ContentPage
                         x.Item().Image(Placeholders.Image(200, 100));
                     });
 
+
+
+                
+
                 page.Footer()
                     .AlignCenter()
                     .Text(x =>
