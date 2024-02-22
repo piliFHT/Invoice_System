@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        string name = Input1.Text;
+        
     }
 
     private void BTN_Clicked_1(object sender, EventArgs e)
@@ -23,7 +23,7 @@ public partial class MainPage : ContentPage
         {
             container.Page(page =>
             {
-                page.Size(PageSizes.A5);
+                page.Size(PageSizes.A4);
                 page.Margin(2, Unit.Centimetre);
                 page.PageColor("#fff");
                 page.DefaultTextStyle(x => x.FontSize(20));
