@@ -9,10 +9,8 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void BTN_Clicked(object sender, EventArgs e)
+    private void BTN_Clicked_1(object sender, EventArgs e)
     {
-        Output.Text += Input.Text + "\n"; //Text co je v Input bude i v Output
-        Input.Text = string.Empty; //Text z Input to smaže -> efekt "přesunu"
+        
     }
 }
-

@@ -12,38 +12,111 @@
             VerticalOptions="Center">
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-
                 <Editor
-                    x:Name="Input"
+                    x:Name="Input1"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="200"
-                    HeightRequest="75"
+                    HeightRequest="30"
                     TextColor="#121212"
-                    BackgroundColor="#fffdf9"/>
-                
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Jméno"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Editor
-                    x:Name="Output"
+                    x:Name="Input2"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     WidthRequest="200"
-                    IsReadOnly="True"
+                    HeightRequest="30"
                     TextColor="#121212"
-                    HeightRequest="75"
-                    BackgroundColor="#7b7b7b"/>
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Příjmení"/>
+            </StackLayout>
 
-                </StackLayout>
-                <Button
-                WidthRequest="150"
-                HeightRequest="75"
-                x:Name="BTN"
-                Text="Uložit"
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input3"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Adresa"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input4"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Město"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input5"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="PSČ"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input6"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="Stát"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input7"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="IČO"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Editor
+                    x:Name="Input8"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="30"
+                    TextColor="#121212"
+                    BackgroundColor="#fffdf9"
+                    Placeholder="DIČ"/>
+            </StackLayout>
+
+            <Button
+                WidthRequest="200"
+                HeightRequest="30"
+                x:Name="BTN1"
+                Text="Generovat PDF"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 TextColor="#fffdf9"
-                Clicked="BTN_Clicked"
+                Clicked="BTN_Clicked_1"
                 BackgroundColor="#ff8800"/>
-
 
         </VerticalStackLayout>
 
