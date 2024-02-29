@@ -34,26 +34,25 @@ public partial class MainPage : ContentPage
 
                 page.Content()
                     .PaddingVertical(1, Unit.Centimetre)
-                    .Column(x =>
-                    {
-                        x.Spacing(20);
+                         .Column(column =>
+                         {
+                             column.Spacing(10);
 
-                        x.Item().Text(Input1.Text);
-                        x.Item().Text(Input2.Text);
-                        x.Item().Text(Input3.Text);
-                        x.Item().Text(Input4.Text);
-                        x.Item().Text(Input5.Text);
-                        x.Item().Text(Input6.Text);
-                        x.Item().Text(Input7.Text);
-                        x.Item().Text(Input8.Text);
-                        x.Item().Image(Placeholders.Image(200, 100));
-                    });
+                             // Invoice details
+                             column.Item().Text($"Name: {Input1.Text}");
+                             column.Item().Text($"Surname: {Input2.Text}");
+                             column.Item().Text($"Address: {Input3.Text}");
+                             column.Item().Text($"City: {Input4.Text}");
+                             column.Item().Text($"ZIP Code: {Input5.Text}");
+                             column.Item().Text($"Country: {Input6.Text}");
+                             column.Item().Text($"ICO: {Input7.Text}");
+                             column.Item().Text($"DIC: {Input8.Text}");
+
+                         });
 
 
 
-                
-
-                page.Footer()
+                             page.Footer()
                     .AlignCenter()
                     .Text(x =>
                     {
@@ -61,7 +60,7 @@ public partial class MainPage : ContentPage
                         x.CurrentPageNumber();
                     });
             });
-        }).GeneratePdf("C:\\Users\\21ic25_hanout\\Downloads\\nebr/hello.pdf");
+        }).GeneratePdf("C:\\Users\\21ic25_hanout\\Downloads\\hello.pdf");
     }
 
 }
